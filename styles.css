@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  font-family: sans-serif;
+  background: #411ab3;
+}
+
+.box {
+  box-shadow: 1px 0px 26px 17px rgba(0, 0, 0, 0.91);
+  -webkit-box-shadow: 1px 0px 26px 17px rgba(0, 0, 0, 0.91);
+  -moz-box-shadow: 1px 0px 26px 17px rgba(0, 0, 0, 0.91);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 75vh;
+  width: 40vw;
+}
+
+.box .box_celebs {
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.box h1 {
+  background-color: rgba(0, 255, 0, 0.829);
+  padding: 0.3em 0.8em;
+  border-radius: 2em;
+}
+
+.box .box_celebs--popup {
+  background-color: white;
+  width: 90%;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.box .box_celebs--popup h2 {
+  color: rgba(0, 255, 0, 0.829);
+  vertical-align: middle;
+}
+
+.box .box_celebs--popup #cross {
+  position: relative;
+  font-size: 2em;
+  top: -4px;
+  cursor: pointer;
+}
+
+.box .box_celebs--popup #cross:hover {
+  color: red;
+}
+
+.box .box_celebs--popup .box_celebs--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box .box_celebs--popup p {
+  line-height: 1.5;
+}
+
+.blurbg {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

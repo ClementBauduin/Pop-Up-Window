@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+  }
+  
+  
+////////////////////////////////////////////////////////////// END OF CSS RESET //////////////////////////////////////////////////////////////
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    font-family: sans-serif;
+    background: #411ab3;
+}
+
+.box {
+    
+        box-shadow: 1px 0px 26px 17px rgba(0, 0, 0, 0.91);
+        -webkit-box-shadow: 1px 0px 26px 17px rgba(0, 0, 0, 0.91);
+        -moz-box-shadow: 1px 0px 26px 17px rgba(0, 0, 0, 0.91);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 75vh;
+        width: 40vw;
+
+
+        .box_celebs {
+            font-size: 1.5em;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        h1 {
+            
+            background-color: rgba(0, 255, 0, 0.829) ;
+            padding: 0.3em 0.8em;
+            border-radius: 2em;
+        }
+
+        .box_celebs--popup {
+            background-color: white;
+            width: 90%;
+            border-radius: 15px;
+            padding: 20px;
+            
+            
+
+            h2 {
+                color:rgba(0, 255, 0, 0.829);
+                vertical-align:middle;
+                
+            }
+
+            #cross {
+                position: relative;
+                font-size: 2em;
+                top: -4px;
+                cursor: pointer;
+                &:hover {
+                    color: red;
+                }
+            }
+
+            
+
+            .box_celebs--title {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+            
+        }
+
+    }
+
+.blurbg {
+    filter: blur(5px);
+}
+
+.hidden {
+    display: none;
+}
+
+
+

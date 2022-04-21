@@ -1,26 +1,33 @@
 const popUp = document.querySelector(".box_celebs--popup");
 const button = document.querySelector(".box_celebs");
-const crossClose = document.querySelector("#cross");
+const cross = document.querySelector("#cross");
+const blurBg = document.querySelector(".blurbg");
 
 
-
-//Event listener sur la div Gandhi
 button.addEventListener("click", () => {
+
     popUp.classList.remove("hidden");
-    button.classList.add("blurbg");
+    blurBg.classList.remove("hidden");
 
-    //Event listener du clique sur la croix
-    crossClose.onclick = () => {
-        popUp.classList.toggle("hidden");                                    //Changer la classe de la popup en hidden
-        button.classList.remove("blurbg");                                   //Retirer la classe blurbg du bouton Gandhi
-    }
+});
 
-    //Event listener sur les touches du clavier
-    document.onkeydown = (e) => {
-        if (e.key === "Escape" && !popUp.classList.contains("hidden")) {     //Target de la touche echap
-            popUp.classList.toggle("hidden");                                //Changer la classe de la popup en hidden
-            button.classList.remove("blurbg");                               //Retirer la classe blurbg du bouton Gandhi
-        }
+
+const popUpClose = () => {
+    popUp.classList.add("hidden");
+    blurBg.classList.add("hidden");
+}
+
+blurBg.addEventListener("click",() => {
+    if (!blurBg.classList.contains("hidden")) {
+        popUpClose();
     }
 })
 
+cross.addEventListener("click",popUpClose);
+
+document.addEventListener("keydown",(e) => {
+    if (e.key === "Escape" && !blurBg.classList.contains("hidden")) {
+        console.log("ça marche la touche est " + e.key)
+        popUpClose();
+    }
+})

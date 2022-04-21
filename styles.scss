@@ -52,6 +52,7 @@ body {
             width: 90%;
             border-radius: 15px;
             padding: 20px;
+            z-index: 10;
             
             
 
@@ -87,7 +88,14 @@ body {
     }
 
 .blurbg {
-    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    
 }
 
 .hidden {
